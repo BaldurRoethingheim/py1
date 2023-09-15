@@ -4,6 +4,6 @@ multi line
 comment.
 '''
 # this is a single line comment
-print("Hey."
+print("Hey.\r\n"
       "How are you?")
 
