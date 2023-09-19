@@ -6,7 +6,6 @@ comment.
 # this is a single line comment
 
 
-
 # tutorial "https://www.youtube.com/watch?v=oxXAb8IikHM&list=PL_pqkvxZ6ho3u8PJAsUU-rOAQ74D0TqZB"
 
 # ex_1 Dein erstes Programm
