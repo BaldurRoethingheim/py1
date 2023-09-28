@@ -13,7 +13,11 @@ str_trennlinie = "\r\n\r\n------------------------------------------------------
 # tutorial "https://www.youtube.com/watch?v=oxXAb8IikHM&list=PL_pqkvxZ6ho3u8PJAsUU-rOAQ74D0TqZB"
 
 # ex_1 Dein erstes Programm
+import numbers
 from os import name
+from string import printable
+from typing import Counter
+
 if (b_exec_all):
         
     print(str_trennlinie)
@@ -181,15 +185,173 @@ if (b_exec_all):
         print("Achtung der Nutzer ist juenger als 18.")
         print("Ich bin immer noch innerhalb der if-Anweisung")
         age = 99
+    
     print("Programmende")
 
 # ex_11 if-Anweisung mit elif- und else-Zweigen erweitern
-if (True):
+if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_11 if-Anweisung mit elif- und else-Zweigen erweitern'"
     "\r\n")    
     
+    age = int(input("Bitte gebe dein Alter ein: "))
     
+    if age  < 18:
+        print("Achtung der Nutzer ist juenger als 18.")
+    elif age == 18: print("Der Nutzer ist exakt 18.")        
+    elif age == 19:
+        print("Der Nutzer ist exakt 19 Jahre alt.")
+    else:
+        print("Der Nutzer ist volljaehrig.")
+        
+    print("Programmende")
+
+# ex_12 Logische Operatoren
+if (b_exec_all):
+    print(str_trennlinie)
+    print("'# ex_12 Logische Operatoren'"
+    "\r\n")
+    
+    print("Willkommen in der Lotterie!")
+    number1 = int(input("Bitte waehle eine Zahl zwischen 1 und 49: "))
+    number2 = int(input("Bitte waehle eine Zahl zwischen 1 und 49: "))
+    number3 = int(input("Bitte waehle eine Zahl zwischen 1 und 49: "))
+    
+    # Gewinnzahl 1: 3
+    # Gewinnzahl 2: 14
+    # Gewinnzahl 3: 22
+
+    if number1 == 3 and number2 == 14 and number3 == 22:
+        print("Herzlichen Glueckwunsch, du hast die Lotterie gewonnen!")
+    else:
+        print("Du hast leider verloren ...")
+
+# ex_13 Die while Schleife
+if (b_exec_all):
+    print(str_trennlinie)
+    print("'# ex_13 Die while Schleife'"
+    "\r\n")
+
+    counter = 5
+    while counter < 10:
+        counter += 1
+        print(f"Hier steht Code, der wiederholt {{{counter}}} ausgefuehrt werden soll.")
+
+# ex_14 Einführung in Listen
+if (b_exec_all):
+    print(str_trennlinie)
+    print("'# ex_14 Einfuehrung in Listen'"
+    "\r\n")
+
+    test_variable = 10
+    numbers = [3,5,15,17,20] # [Wert1, Wert2, Wert3, ..., WertN]
+    
+    print(numbers)
+    print(type(numbers))
+    
+    print("\r\n")
+
+    names = ["Janek", "Hendrik", "Fritz", "Tanja", "Susi", 4, 8.2] # Alle (darstellbare) Typen können gemischt beinhaltet werden.
+    print(names)
+    print(type(numbers))
+
+# ex_15 Zugriff auf Listen
+if (b_exec_all):
+    print(str_trennlinie)
+    print("'# ex_15 Zugriff auf Listen'"
+    "\r\n")
+
+    names = ["Janek", "Hendrik", "Fritz", "Tanja", "Susi", 4, 8.2]
+    print(names)
+    
+    counter = 0
+    while counter < 7:
+        counter += 1
+        print(f"+{counter}. Listeneintrag: '{names[counter-1]}'")
+        print(f"{-counter}. Listeneintrag: '{names[-counter]}'")
+
+    names[0] = "Xaver"
+    print(names)
+
+# ex_16 Die for Schleife
+if (b_exec_all):
+    print(str_trennlinie)
+    print("'# ex_16 Die for Schleife'"
+    "\r\n")
+
+    for element in [1,3,5,7]:
+        print(element)
+    print("\r\n")
+    for element in "Ich bin ein String.":
+        print(element)
+
+# ex_17 for Schleife als Zählerschleife verwenden
+if (b_exec_all):
+    print(str_trennlinie)
+    print("'# ex_17 for Schleife als Zaehlerschleife verwenden'"
+    "\r\n")
+    
+    for element in range(5, 10+1, 2):
+        print(element)
+
+# ex_18 Funktionen
+if (b_exec_all):
+    print(str_trennlinie)
+    print("'# ex_18 Funktionen'"
+    "\r\n")
+    
+    print("Das ist eine Ausgabe.")
+    # say_hello()    # Fehler, da Funktion vor Definition aufgerufen wird, da der Interpreter noch nichts davon weiß.
+    def say_hello():
+        print("Hallo, Hendrik.")
+        print("Willkommen zurueck.")
+    
+    say_hello()
+    print("Test")
+    say_hello()
+
+# ex_19 Funktionen mit Parametern
+if (b_exec_all):
+    print(str_trennlinie)
+    print("'# ex_19 Funktionen mit Parametern'"
+    "\r\n")
+        
+    def say_hello(first_name, last_name):
+        print("Hallo, " + first_name + " " + last_name + ".")
+        print("Willkommen zurueck.")
+    
+    say_hello("Hendrik", "Hendrikson")
+    say_hello("Fritz", "Bauer")
+    say_hello("Susi", "Mustermann")
+    
+# ex_20 Funktionen mit Rückgabewert
+if (b_exec_all):
+    print(str_trennlinie)
+    print("'# ex_20 Funktionen mit Rueckgabewert'"
+    "\r\n")
+    
+    def say_hello(first_name, last_name):
+        print(print("Hallo, " + first_name + " " + last_name + "."))
+        print("Willkommen zurueck.")
+    
+    print(type(say_hello("Hendrik", "Hendrikson"))) # erst innere Wert und dann äußere Wert wird ausgegeben # none == no return
+    
+    def maximum(a,b):
+        if a < b: return b
+        else: return a
+    
+    print("\r\n")
+    result = maximum(3,7)
+    print(result)
+    
+# ex_21 Objektorientierung (Konzept)
+if (True):
+    print(str_trennlinie)
+    print("'# ex_21 Objektorientierung (Konzept)'"
+    "\r\n")
+
+
+
 # ...
 
 
