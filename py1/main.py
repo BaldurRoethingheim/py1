@@ -411,9 +411,19 @@ if (b_exec_all):
     
     # Tutorial-Reihe (24/24) - FERTIG
     
+#-------------------------------------------------
+
+'''
+Python Tutorial
+Release 3.3.2
+Guido van Rossum
+Fred L. Drake, Jr., editor
+May 27, 2013
+Python Software Foundation
+Email: docs@python.org
+'''
 
 
-    
 
 # ...
 
