@@ -16,6 +16,7 @@ str_trennlinie = "\r\n\r\n------------------------------------------------------
 import numbers
 from os import name
 from string import printable
+from tkinter import SEL
 from typing import Counter
 
 if (b_exec_all):
@@ -344,13 +345,46 @@ if (b_exec_all):
     result = maximum(3,7)
     print(result)
     
-# ex_21 Objektorientierung (Konzept)
+# ex_22 Klassen und Objekte
+# ex_23 Der self Parameter
 if (True):
-    print(str_trennlinie)
-    print("'# ex_21 Objektorientierung (Konzept)'"
+    print(True)
+    print("'# ex_22 Klassen und Objekte'"
+    "\r\n"
+    "'# ex_23 Der self Parameter'"
     "\r\n")
 
+    class Car:
+        def __init__(self):
+            self.car_brand = None
+            self.horse_power = None
+            self.color = None
+    car1 = Car()                    # Car Objekt 1
+    print(car1.car_brand)
+    car1.car_brand = "Audi"
+    car1.horse_power = 258
+    car1.color = "Blau"
+    
+    print(car1.car_brand)
+    print(car1.horse_power)
+    print(car1.color)
+    
+    car2 = Car()                    # Car Objekt 2
+    print(car2.car_brand)
+    car2.car_brand = "BMW"
+    car2.horse_power = 210
+    car2.color = "Schwarz"
+    
+    print(car2.car_brand)
+    print(car2.horse_power)
+    print(car2.color)
+    
+    print(car1)
+    print(car2)
 
+
+
+    
 
 # ...
 
