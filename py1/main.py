@@ -13,10 +13,11 @@ str_trennlinie = "\r\n\r\n------------------------------------------------------
 # tutorial "https://www.youtube.com/watch?v=oxXAb8IikHM&list=PL_pqkvxZ6ho3u8PJAsUU-rOAQ74D0TqZB"
 
 # ex_1 Dein erstes Programm
+from lib2to3.pgen2 import driver
 import numbers
 from os import name
 from string import printable
-from tkinter import SEL
+from tkinter import SE, SEL
 from typing import Counter
 
 if (b_exec_all):
@@ -33,7 +34,7 @@ if (b_exec_all):
         print_hi('Welt')    
     print("Hallo Welt, ich lerne gerade programmieren.")
 
-# ex_2 Zahlen in Python
+    # ex_2 Zahlen in Python
 if (b_exec_all):
        
     print(str_trennlinie)
@@ -46,7 +47,7 @@ if (b_exec_all):
     print(2.1 + 1.5)
     print(2.4*2)
 
-# ex_3 Strings in Python
+    # ex_3 Strings in Python
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_3 Strings in Python'"
@@ -60,7 +61,7 @@ if (b_exec_all):
     print("""Die 
     Programmiersprache "Python" ist cool.""")
 
-# ex_4 Variablen
+    # ex_4 Variablen
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_4 Variablen'"
@@ -72,7 +73,7 @@ if (b_exec_all):
     print(num_age)
     print(str_name)
 
-# ex_5 Datentypen int, float, str
+    # ex_5 Datentypen int, float, str
 if (b_exec_all):
     
     print(str_trennlinie)
@@ -87,7 +88,7 @@ if (b_exec_all):
     str_variable1 = "Das ist ein String."
     str_variable2 = 'Das ist ein String.'
 
-# ex_6 Die input()-Funktion
+    # ex_6 Die input()-Funktion
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_6 Die input()-Funktion'"
@@ -100,7 +101,7 @@ if (b_exec_all):
     print("Mein Alter ist " + num_age)
     print("Ende des Programms")
 
-# ex_7 Type-Casting-Funktionen
+    # ex_7 Type-Casting-Funktionen
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_7 Type-Casting-Funktionen'"
@@ -127,7 +128,7 @@ if (b_exec_all):
     print(float(value1+value2))
     print(str(value1+value2))
 
-# ex_8 Der Zuweisungsoperator
+    # ex_8 Der Zuweisungsoperator
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_8 Der Zuweisungsoperator'"
@@ -148,7 +149,7 @@ if (b_exec_all):
     value2 /= 2
     print(value2)
 
-# ex_9 Vergleichsoperatoren und der Datentyp bool
+    # ex_9 Vergleichsoperatoren und der Datentyp bool
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_9 Vergleichsoperatoren und der Datentyp bool'"
@@ -174,7 +175,7 @@ if (b_exec_all):
     print(4 != 5) # (!=) ungleich Operator
     print((4 + 2) * 3 == 5) # (==) gleich Operator    
 
-# ex_10 Die if Anweisung
+    # ex_10 Die if Anweisung
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_10 Die if Anweisung'"
@@ -189,7 +190,7 @@ if (b_exec_all):
     
     print("Programmende")
 
-# ex_11 if-Anweisung mit elif- und else-Zweigen erweitern
+    # ex_11 if-Anweisung mit elif- und else-Zweigen erweitern
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_11 if-Anweisung mit elif- und else-Zweigen erweitern'"
@@ -207,7 +208,7 @@ if (b_exec_all):
         
     print("Programmende")
 
-# ex_12 Logische Operatoren
+    # ex_12 Logische Operatoren
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_12 Logische Operatoren'"
@@ -227,7 +228,7 @@ if (b_exec_all):
     else:
         print("Du hast leider verloren ...")
 
-# ex_13 Die while Schleife
+    # ex_13 Die while Schleife
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_13 Die while Schleife'"
@@ -238,7 +239,7 @@ if (b_exec_all):
         counter += 1
         print(f"Hier steht Code, der wiederholt {{{counter}}} ausgefuehrt werden soll.")
 
-# ex_14 Einführung in Listen
+    # ex_14 Einführung in Listen
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_14 Einfuehrung in Listen'"
@@ -256,7 +257,7 @@ if (b_exec_all):
     print(names)
     print(type(numbers))
 
-# ex_15 Zugriff auf Listen
+    # ex_15 Zugriff auf Listen
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_15 Zugriff auf Listen'"
@@ -274,7 +275,7 @@ if (b_exec_all):
     names[0] = "Xaver"
     print(names)
 
-# ex_16 Die for Schleife
+    # ex_16 Die for Schleife
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_16 Die for Schleife'"
@@ -286,7 +287,7 @@ if (b_exec_all):
     for element in "Ich bin ein String.":
         print(element)
 
-# ex_17 for Schleife als Zählerschleife verwenden
+    # ex_17 for Schleife als Zählerschleife verwenden
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_17 for Schleife als Zaehlerschleife verwenden'"
@@ -295,7 +296,7 @@ if (b_exec_all):
     for element in range(5, 10+1, 2):
         print(element)
 
-# ex_18 Funktionen
+    # ex_18 Funktionen
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_18 Funktionen'"
@@ -311,7 +312,7 @@ if (b_exec_all):
     print("Test")
     say_hello()
 
-# ex_19 Funktionen mit Parametern
+    # ex_19 Funktionen mit Parametern
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_19 Funktionen mit Parametern'"
@@ -325,7 +326,7 @@ if (b_exec_all):
     say_hello("Fritz", "Bauer")
     say_hello("Susi", "Mustermann")
     
-# ex_20 Funktionen mit Rückgabewert
+    # ex_20 Funktionen mit Rückgabewert
 if (b_exec_all):
     print(str_trennlinie)
     print("'# ex_20 Funktionen mit Rueckgabewert'"
@@ -345,13 +346,16 @@ if (b_exec_all):
     result = maximum(3,7)
     print(result)
     
-# ex_22 Klassen und Objekte
-# ex_23 Der self Parameter
-if (True):
+    # ex_22 Klassen und Objekte
+    # ex_23 Der self Parameter
+    # ex_24 Methoden in Klassen
+if (b_exec_all):
     print(True)
     print("'# ex_22 Klassen und Objekte'"
     "\r\n"
     "'# ex_23 Der self Parameter'"
+    "\r\n"
+    "'# ex_24 Methoden in Klassen'"
     "\r\n")
 
     class Car:
@@ -359,29 +363,54 @@ if (True):
             self.car_brand = None
             self.horse_power = None
             self.color = None
-    car1 = Car()                    # Car Objekt 1
-    print(car1.car_brand)
-    car1.car_brand = "Audi"
-    car1.horse_power = 258
-    car1.color = "Blau"
-    
-    print(car1.car_brand)
-    print(car1.horse_power)
-    print(car1.color)
-    
-    car2 = Car()                    # Car Objekt 2
-    print(car2.car_brand)
-    car2.car_brand = "BMW"
-    car2.horse_power = 210
-    car2.color = "Schwarz"
-    
-    print(car2.car_brand)
-    print(car2.horse_power)
-    print(car2.color)
-    
-    print(car1)
-    print(car2)
+            self.x_position = 5
+            self.y_position = 5
+        
+        def drive(self, x, y):
+            self.x_position += x
+            self.y_position += y
+            
 
+    car1 = Car()                    # Car Objekt 1
+    if (False):
+        
+        print(car1.car_brand)
+        car1.car_brand = "Audi"
+        car1.horse_power = 258
+        car1.color = "Blau"
+        
+        print(car1.car_brand)
+        print(car1.horse_power)
+        print(car1.color)
+        
+        car2 = Car()                    # Car Objekt 2
+        print(car2.car_brand)
+        car2.car_brand = "BMW"
+        car2.horse_power = 210
+        car2.color = "Schwarz"
+        
+        print(car2.car_brand)
+        print(car2.horse_power)
+        print(car2.color)
+        
+        car3 = car1             # Referenzübergabe / -kopie von car1 auf car3
+
+        print(car1)
+        print(car2)
+        print(car3)
+        print(car1.horse_power)
+        print(car3.horse_power)
+        car3.horse_power = 266  # car3 ändert Eigenschaft von car1
+        print(car1.horse_power) # car3 gänderte Eigenschaft wird ausgegeben
+    
+    print(car1.x_position)
+    print(car1.y_position)
+    car1.drive(5,10)
+    print(car1.x_position)
+    print(car1.y_position)
+    
+    # Tutorial-Reihe (24/24) - FERTIG
+    
 
 
     
