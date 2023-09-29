@@ -17,8 +17,9 @@ from lib2to3.pgen2 import driver
 import numbers
 from os import name
 from string import printable
-from tkinter import SE, SEL
+from tkinter import ON, SE, SEL
 from typing import Counter
+
 
 if (b_exec_all):
         
@@ -411,6 +412,69 @@ if (b_exec_all):
     
     # Tutorial-Reihe (24/24) - FERTIG
     
+#-------------------------------------------------
+
+# tutorial "https://youtu.be/3ykwB-M2-mg?list=PLNmsVeXQZj7q0ao69AIogD94oBgp3E9Zs"
+
+b_exec_all2 = False
+
+if(b_exec_all2):
+    print(str_trennlinie +
+          "\r\n"
+          "'Python Tutorial #4 - Listen'"
+          "\r\n")
+    
+    v = [0,1,2,3]
+    print(v)
+    print(v + [4,5,6])
+    v[0] = -1
+    print(v[0])
+    print(v)
+    v[0] = v[1] * v[2]
+    print(v)
+    v += [4,5,6]
+    v.append(42)
+    print(v)
+    x = ['c', 'd']
+    y = [v,x]
+    print(y)
+
+if(b_exec_all2):
+    print(str_trennlinie +
+"""
+'Python Tutorial #5 - Strings als Listen'
+""")
+    
+    print(3* "hi" + 'ho')
+    one = 'h''i'
+    print(one)
+    print(one[0])
+    one = "Ich bin ein total unnoetiger Text"
+    print(one[10])
+    v = 'c'
+    print(v)
+    print(v[0])
+    print(one[-1])
+    print(one[-4])
+    print(one[0:2+1])
+    b = one[0:3]
+    print(b)
+    print(one[:3])
+    print(one[4:])
+    print(one[-4:])
+    one = 'du ' + one[4:]
+    print(one)
+    print(len(one))
+
+if(True):
+    print(str_trennlinie +
+"""
+'Python Tutorial #6 - Das erste echte Script'
+""") # "https://youtu.be/blFbmXYl_iA?list=PLNmsVeXQZj7q0ao69AIogD94oBgp3E9Zs"
+
+    
+    
+
 #-------------------------------------------------
 
 '''
