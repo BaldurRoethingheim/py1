@@ -471,7 +471,7 @@ if(True):
 """
 'Python Tutorial #6 - Das erste echte Script'
 """) # "https://youtu.be/blFbmXYl_iA?list=PLNmsVeXQZj7q0ao69AIogD94oBgp3E9Zs"
-
+    
     
     
 
@@ -487,7 +487,13 @@ Python Software Foundation
 Email: docs@python.org
 '''
 
+#-------------------------------------------------
+# random tutorials from overall the www
 
+
+    
+
+#-------------------------------------------------
 
 # ...
 
